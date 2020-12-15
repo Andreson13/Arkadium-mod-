@@ -1,0 +1,17 @@
+[
+{
+  "modid": "arkamod",
+  "name": "Arka mod",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Andreson"],
+  "credits": "Arkadium developper",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+                                                                                            
