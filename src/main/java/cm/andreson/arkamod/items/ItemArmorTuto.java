@@ -2,6 +2,7 @@ package cm.andreson.arkamod.items;
 
 import cm.andreson.arkamod.Reference;
 import cm.andreson.arkamod.init.ItemMod;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
@@ -9,7 +10,8 @@ public class ItemArmorTuto extends ItemArmor {
 
 	public ItemArmorTuto(ArmorMaterial material, int p_i45325_3_) 
 	{
-		super(material, 0, p_i45325_3_)
+		super(material, 0, p_i45325_3_);
+	}
 
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
 	{
