@@ -8,4 +8,4 @@ public class Reference {
 	public static final String version = "1.0.0";
 	public static final String CLIENT_PROXY = "cm.andreson.arkamod.proxy.clientproxy";
 	public static final String SERVEUR_PROXY = "cm.andreson.arkamod.proxy.CommonProxy";
-	}
+}

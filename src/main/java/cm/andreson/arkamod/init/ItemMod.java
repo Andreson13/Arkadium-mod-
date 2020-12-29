@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSpade;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import cm.andreson.arkamod.Reference;
@@ -43,6 +44,10 @@ public class ItemMod extends Reference
 			.setTextureName(MOD_ID + ":arkadium_pickaxe")
 			.setUnlocalizedName("arkadium_pickaxe");
 	
+	public static final ItemSpade ARKADIUM_SPADE = (ItemSpade) new ItemSpadeTest(arkaMaterial)
+			.setTextureName(MOD_ID + ":arkadium_shovel")
+			.setUnlocalizedName("arkadium_shovel");
+	
     
     public static void init() 
     {
@@ -56,6 +61,7 @@ public class ItemMod extends Reference
         GameRegistry.registerItem(pentalonArmor, "pentalonArmor");
         GameRegistry.registerItem(bootsArmor, "bootsArmor");
         GameRegistry.registerItem(ARKADIUM_PICKAXE, "arkadium_pickaxe");
+        GameRegistry.registerItem(ARKADIUM_SPADE, "arkadium_shovel");
     }
     
 }
