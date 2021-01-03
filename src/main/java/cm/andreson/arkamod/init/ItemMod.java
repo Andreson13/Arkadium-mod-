@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
@@ -63,6 +64,9 @@ public class ItemMod extends Reference
 	public static final ItemSword ARKADIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":word1")
 			.setUnlocalizedName("arkadium_sword");
+	public static final ItemFood ARKADIUM_FOOD = (ItemFood) new ItemFoodTest(3, 0, false)
+			.setTextureName(MOD_ID + ":bonbon")
+			.setUnlocalizedName("arkadium_food");
     
     public static void init() 
     {
@@ -80,6 +84,7 @@ public class ItemMod extends Reference
         GameRegistry.registerItem(ARKADIUM_HOE, "arkadium_hoe");
         GameRegistry.registerItem(ARKADIUM_AXE, "arkadium_axe");
         GameRegistry.registerItem(ARKADIUM_SWORD, "arkadium_sword");
+        GameRegistry.registerItem(ARKADIUM_FOOD, "arkadium_food");
     }
     
 }
