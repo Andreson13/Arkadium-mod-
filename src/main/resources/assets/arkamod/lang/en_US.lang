@@ -1,3 +1,21 @@
-item.Item_test.name= Arkadium ingot
+item.Item_test.name= Arkadium Ingot
 
-tile.arkadium_block.name= arkadium_block
+tile.arkadium_block.name= Arkadium Block
+
+item.casqueArmor.name= Arkadium Helmet
+
+item.plastronArmor.name= Arkadium Chestplate
+
+item.pentalonArmor.name= Arkadium Leggings
+
+item.bootsArmor.name= Arkadium Boots
+
+item.arkadium_pickaxe.name= Arkadium Pickaxe
+
+item.arkadium_shovel.name= Arkadium Shovel
+
+item.arkadium_hoe.name= Arkadium Hoe
+
+item.arkadium_sword.name= Arkadium Sword
+
+item.arkadium_food.name= Arkadium Sweet

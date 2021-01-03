@@ -64,10 +64,11 @@ public class ItemMod extends Reference
 	public static final ItemSword ARKADIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":word1")
 			.setUnlocalizedName("arkadium_sword");
+	
 	public static final ItemFood ARKADIUM_FOOD = (ItemFood) new ItemFoodTest(3, 0, false)
-			.setTextureName(MOD_ID + ":bonbon")
-			.setUnlocalizedName("arkadium_food");
-    
+            .setAlwaysEdible()
+            .setTextureName(MOD_ID + ":bonbon")
+            .setUnlocalizedName("arkadium_food");
     public static void init() 
     {
     }  
