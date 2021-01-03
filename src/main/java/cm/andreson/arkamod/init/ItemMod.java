@@ -5,8 +5,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemSword;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
 import cm.andreson.arkamod.Reference;
@@ -17,6 +20,7 @@ public class ItemMod extends Reference
 {
 	public static ArmorMaterial arkaAmor = EnumHelper.addArmorMaterial("ArkaAmor", 40, new int []{8, 13, 11, 8}, 50); 
 	
+	public static ArmorMaterial amethystAmor = EnumHelper.addArmorMaterial("amethystAmor", 40, new int []{3,9,7,4}, 10);
 	public static ToolMaterial arkaMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
 	
     public static final Item Item_test = new Item()
@@ -48,6 +52,17 @@ public class ItemMod extends Reference
 			.setTextureName(MOD_ID + ":arkadium_shovel")
 			.setUnlocalizedName("arkadium_shovel");
 	
+	public static final ItemHoe ARKADIUM_HOE = (ItemHoe) new ItemHoeTest(arkaMaterial) 
+			.setTextureName(MOD_ID + ":arkadium_hoe")
+			.setUnlocalizedName("arkadium_hoe");
+	
+	public static final ItemAxe ARKADIUM_AXE = (ItemAxe) new ItemAxeTest(arkaMaterial)
+			.setTextureName(MOD_ID + ":arkadium_axe")
+			.setUnlocalizedName("arkadium_axe");
+	
+	public static final ItemSword ARKADIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
+			.setTextureName(MOD_ID + ":word1")
+			.setUnlocalizedName("arkadium_sword");
     
     public static void init() 
     {
@@ -62,6 +77,9 @@ public class ItemMod extends Reference
         GameRegistry.registerItem(bootsArmor, "bootsArmor");
         GameRegistry.registerItem(ARKADIUM_PICKAXE, "arkadium_pickaxe");
         GameRegistry.registerItem(ARKADIUM_SPADE, "arkadium_shovel");
+        GameRegistry.registerItem(ARKADIUM_HOE, "arkadium_hoe");
+        GameRegistry.registerItem(ARKADIUM_AXE, "arkadium_axe");
+        GameRegistry.registerItem(ARKADIUM_SWORD, "arkadium_sword");
     }
     
 }
