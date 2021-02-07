@@ -20,4 +20,6 @@ public class BlockMod
     {
 		GameRegistry.registerBlock(arkadium_block, arkadium_block.getUnlocalizedName().substring(5));
 	}
+
+		
 }

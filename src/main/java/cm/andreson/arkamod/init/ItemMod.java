@@ -69,6 +69,16 @@ public class ItemMod extends Reference
             .setAlwaysEdible()
             .setTextureName(MOD_ID + ":bonbon")
             .setUnlocalizedName("arkadium_food");
+	
+	public static final Item TITANIUM_INGOT = (ItemIngot) new ItemTitaniumIngot()
+			.setTextureName(MOD_ID + ":ark_titanium_ingot")
+			.setUnlocalizedName("titanium_ingot");
+	
+	public static final Item AMETHYST_CRYSTAL = (ItemIngot) new ItemAmethystCrystal()
+			.setTextureName(MOD_ID +":amthyste_crystal")
+			.setUnlocalizedName("amethyst_crystal");
+			
+			
     public static void init() 
     {
     }  
@@ -86,6 +96,8 @@ public class ItemMod extends Reference
         GameRegistry.registerItem(ARKADIUM_AXE, "arkadium_axe");
         GameRegistry.registerItem(ARKADIUM_SWORD, "arkadium_sword");
         GameRegistry.registerItem(ARKADIUM_FOOD, "arkadium_food");
+        GameRegistry.registerItem(TITANIUM_INGOT, "titanium_ingot");
+        GameRegistry.registerItem(AMETHYST_CRYSTAL, "amethyst_crystal");
     }
     
 }

@@ -18,7 +18,7 @@ public class ItemFoodTest extends ItemFood {
 
 @Override
 public ItemStack onEaten(ItemStack itemStack, World world, EntityPlayer entityPlayer) {
-    entityPlayer.addPotionEffect(new PotionEffect(21, 180*20, 2));//coeur rouges; 22=id; 100=nombre de secondes*20; 2=augmentation de la puissance de l'éffet
+    entityPlayer.addPotionEffect(new PotionEffect(21, 180*20, 2));//coeur rouge; 22=id; 100=nombre de secondes*20; 2=augmentation de la puissance de l'éffet
     entityPlayer.addPotionEffect(new PotionEffect(21, 180*20, 2));//coeur jaune
     return super.onEaten(itemStack, world, entityPlayer);
 }
