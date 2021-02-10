@@ -71,11 +71,13 @@ public class ItemMod extends Reference
             .setUnlocalizedName("arkadium_food");
 	
 	public static final Item TITANIUM_INGOT = (ItemIngot) new ItemTitaniumIngot()
+			.setCreativeTab(CreativeTabs.tabDecorations)
 			.setTextureName(MOD_ID + ":ark_titanium_ingot")
 			.setUnlocalizedName("titanium_ingot");
 	
 	public static final Item AMETHYST_CRYSTAL = (ItemIngot) new ItemAmethystCrystal()
-			.setTextureName(MOD_ID +":amthyste_crystal")
+			.setCreativeTab(CreativeTabs.tabDecorations)
+			.setTextureName(MOD_ID + ":amthyste_crystal")
 			.setUnlocalizedName("amethyst_crystal");
 			
 			
