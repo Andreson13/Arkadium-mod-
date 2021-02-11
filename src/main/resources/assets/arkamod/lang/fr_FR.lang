@@ -1,4 +1,4 @@
-item.Item_test.name= L'ingot d'arkadium
+item.item_test.name= L'ingot d'arkadium
 
 tile.block.name= arkadium_block
 
@@ -16,6 +16,8 @@ item.arkadium_shovel.name= Pelle en Arkadium
 
 item.arkadium_hoe.name=  Houe en Arkadium 
 
+item.arkadium_axe.name= Hache en arkadium
+
 item.arkadium_sword.name= épée en Arkadium 
 
 item.arkadium_food.name= Bonbon en Arkadium 
@@ -25,3 +27,5 @@ ItemGroup.arkadium= Tab Arkadium
 item.titanium_ingot.name= Lingot de Titanium 
 
 item.amethyst_crystal.name= Crystal en Amethyste
+
+tile.arkadium_ore.name= Minerais d'Arkadium
