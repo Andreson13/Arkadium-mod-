@@ -19,3 +19,9 @@ item.arkadium_hoe.name=  Houe en Arkadium
 item.arkadium_sword.name= épée en Arkadium 
 
 item.arkadium_food.name= Bonbon en Arkadium 
+
+ItemGroup.arkadium= Tab Arkadium
+
+item.titanium_ingot.name= Lingot de Titanium 
+
+item.amethyst_crystal.name= Crystal en Amethyste
