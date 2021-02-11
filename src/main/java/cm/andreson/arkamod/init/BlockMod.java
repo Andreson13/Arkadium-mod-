@@ -19,11 +19,11 @@ public class BlockMod
 				.setCreativeTab(CreativeTabs.tabBlock)
 				.setBlockName("arkadium_ore")
 				.setBlockTextureName(Reference.MOD_ID + ":arkadium_ore_v2")
-				.setResistance(30)
-				.setHardness(5)
-				.setLightLevel(15);
-
+				.setResistance(50)
+				.setHardness(10)
+				.setLightLevel(60);
 	}
+				
 	public static void register()
     {
 		GameRegistry.registerBlock(arkadium_block, arkadium_block.getUnlocalizedName().substring(5));

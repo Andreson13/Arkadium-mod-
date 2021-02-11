@@ -13,6 +13,7 @@ import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
+import cm.andreson.arkamod.ArkadiumMod;
 import cm.andreson.arkamod.Reference;
 import cm.andreson.arkamod.items.ItemArmorTuto;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -25,58 +26,68 @@ public class ItemMod extends Reference
 	public static ToolMaterial arkaMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
 	
     public static final Item Item_test = new Item()
-    		.setCreativeTab(CreativeTabs.tabDecorations)
+    		.setCreativeTab(ArkadiumMod.Arkatab)
     		.setTextureName(MOD_ID + ":item_test")
     		.setUnlocalizedName("item_test");
     
     public static final ItemArmor casqueArmor = (ItemArmor) new ItemArmorTuto(arkaAmor, 0)
     		.setTextureName(MOD_ID + ":casqueArmor")
-    		.setUnlocalizedName("casqueArmor");
+    		.setUnlocalizedName("casqueArmor")
+    		.setCreativeTab(ArkadiumMod.Arkatab);
     
     public static final ItemArmor plastronArmor = (ItemArmor) new ItemArmorTuto(arkaAmor, 1)
     		.setTextureName(MOD_ID + ":plastronArmor")
-    		.setUnlocalizedName("plastronArmor");
+    		.setUnlocalizedName("plastronArmor")
+    		.setCreativeTab(ArkadiumMod.Arkatab);
     
     public static final ItemArmor pentalonArmor = (ItemArmor) new ItemArmorTuto(arkaAmor, 2)
     		.setTextureName(MOD_ID + ":pentalonArmor")
-    		.setUnlocalizedName("pentalonArmor");
+    		.setUnlocalizedName("pentalonArmor")
+    		.setCreativeTab(ArkadiumMod.Arkatab);
     
     public static final ItemArmor bootsArmor = (ItemArmor) new ItemArmorTuto(arkaAmor, 3)
     		.setTextureName(MOD_ID + ":bootsArmor")
-    		.setUnlocalizedName("bootsArmor");
+    		.setUnlocalizedName("bootsArmor")
+    		.setCreativeTab(ArkadiumMod.Arkatab);
     
 	public static final ItemPickaxe ARKADIUM_PICKAXE = (ItemPickaxe) new ItemPickaxeTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":arkadium_pickaxe")
-			.setUnlocalizedName("arkadium_pickaxe");
+			.setUnlocalizedName("arkadium_pickaxe")
+			.setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final ItemSpade ARKADIUM_SPADE = (ItemSpade) new ItemSpadeTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":arkadium_shovel")
-			.setUnlocalizedName("arkadium_shovel");
+			.setUnlocalizedName("arkadium_shovel")
+			.setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final ItemHoe ARKADIUM_HOE = (ItemHoe) new ItemHoeTest(arkaMaterial) 
 			.setTextureName(MOD_ID + ":arkadium_hoe")
-			.setUnlocalizedName("arkadium_hoe");
+			.setUnlocalizedName("arkadium_hoe")
+			.setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final ItemAxe ARKADIUM_AXE = (ItemAxe) new ItemAxeTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":arkadium_axe")
-			.setUnlocalizedName("arkadium_axe");
+			.setUnlocalizedName("arkadium_axe")
+			.setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final ItemSword ARKADIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
 			.setTextureName(MOD_ID + ":word1")
-			.setUnlocalizedName("arkadium_sword");
+			.setUnlocalizedName("arkadium_sword")
+			.setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final ItemFood ARKADIUM_FOOD = (ItemFood) new ItemFoodTest(3, 0, false)
             .setAlwaysEdible()
             .setTextureName(MOD_ID + ":bonbon")
-            .setUnlocalizedName("arkadium_food");
+            .setUnlocalizedName("arkadium_food")
+            .setCreativeTab(ArkadiumMod.Arkatab);
 	
 	public static final Item TITANIUM_INGOT = (ItemIngot) new ItemTitaniumIngot()
-			.setCreativeTab(CreativeTabs.tabDecorations)
+			.setCreativeTab(ArkadiumMod.Arkatab)
 			.setTextureName(MOD_ID + ":ark_titanium_ingot")
 			.setUnlocalizedName("titanium_ingot");
 	
 	public static final Item AMETHYST_CRYSTAL = (ItemIngot) new ItemAmethystCrystal()
-			.setCreativeTab(CreativeTabs.tabDecorations)
+			.setCreativeTab(ArkadiumMod.Arkatab)
 			.setTextureName(MOD_ID + ":amthyste_crystal")
 			.setUnlocalizedName("amethyst_crystal");
 			
