@@ -3,6 +3,7 @@ package cm.andreson.arkamod;
 import cm.andreson.arkamod.init.BlockMod;
 import cm.andreson.arkamod.init.ItemMod;
 import cm.andreson.arkamod.proxy.CommonProxy;
+import cm.andreson.arkamod.world.worldRegister;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -36,6 +37,7 @@ public class ArkadiumMod {
 		ItemMod.register();
 		BlockMod.init();
 		BlockMod.register();
+		worldRegister.MainRegistry();
 	}
 	
 	@EventHandler
