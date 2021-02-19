@@ -7,6 +7,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 
 public class BlockMod 
 {
@@ -48,5 +49,8 @@ public class BlockMod
 		GameRegistry.registerBlock(arkadium_ore, arkadium_ore.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(titanium_block, titanium_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(amethyst_block, amethyst_block.getUnlocalizedName().substring(5));
-	}
+	    GameRegistry.addRecipe(new ItemStack(BlockMod.arkadium_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.Item_test });
+	    GameRegistry.addRecipe(new ItemStack(BlockMod.titanium_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.TITANIUM_INGOT });
+	    GameRegistry.addRecipe(new ItemStack(BlockMod.amethyst_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.AMETHYST_CRYSTAL });
+	  }
 }

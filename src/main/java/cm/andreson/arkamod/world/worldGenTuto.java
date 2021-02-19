@@ -57,6 +57,7 @@ public class worldGenTuto implements IWorldGenerator {
 
 	private void generateOverWorld(World world, int i, int j, Random random)
 	{
+<<<<<<< HEAD
 		addOre(BlockMod.arkadium_ore, Blocks.stone, random, world, i, j, 20, 200, 5, 10, 60);
 	}
 
@@ -67,3 +68,15 @@ public class worldGenTuto implements IWorldGenerator {
 
 
 }
+=======
+		addOre(BlockMod.arkadium_ore, Blocks.stone, random, world, i, j, 1, 5, 1, 1, 6);
+	}
+
+	private void generateEnd(World world, int i, int j, Random random) 
+	{
+	
+	}
+
+
+}
+>>>>>>> branch 'master' of https://github.com/Andreson13/Arkadium-mod-.git
