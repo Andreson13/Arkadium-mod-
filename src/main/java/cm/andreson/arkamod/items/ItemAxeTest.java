@@ -1,4 +1,4 @@
-package cm.andreson.arkamod.init;
+package cm.andreson.arkamod.items;
 
 import net.minecraft.item.ItemAxe;
 

@@ -2,7 +2,7 @@ package cm.andreson.arkamod.world;
 
 import java.util.Random;
 
-import cm.andreson.arkamod.init.BlockMod;
+import cm.andreson.arkamod.blocks.BlockCreation;
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -52,13 +52,13 @@ public class worldGenTuto implements IWorldGenerator {
 
 	private void generateNether(World world, int i, int j, Random random) 
 	{
-		addOre(BlockMod.arkadium_ore, Blocks.netherrack, random, world, i, j, 20, 200, 5, 10, 60);
+		addOre(BlockCreation.arkadium_ore, Blocks.netherrack, random, world, i, j, 20, 200, 5, 10, 60);
 	}
 
 	private void generateOverWorld(World world, int i, int j, Random random)
 	{
-<<<<<<< HEAD
-		addOre(BlockMod.arkadium_ore, Blocks.stone, random, world, i, j, 20, 200, 5, 10, 60);
+
+		addOre(BlockCreation.arkadium_ore, Blocks.stone, random, world, i, j, 1, 5, 1, 1, 6);
 	}
 
 	private void generateEnd(World world, int i, int j, Random random) 
@@ -68,15 +68,3 @@ public class worldGenTuto implements IWorldGenerator {
 
 
 }
-=======
-		addOre(BlockMod.arkadium_ore, Blocks.stone, random, world, i, j, 1, 5, 1, 1, 6);
-	}
-
-	private void generateEnd(World world, int i, int j, Random random) 
-	{
-	
-	}
-
-
-}
->>>>>>> branch 'master' of https://github.com/Andreson13/Arkadium-mod-.git

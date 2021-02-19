@@ -1,7 +1,7 @@
 package cm.andreson.arkamod;
 
-import cm.andreson.arkamod.init.BlockMod;
-import cm.andreson.arkamod.init.ItemMod;
+import cm.andreson.arkamod.blocks.BlockCreation;
+import cm.andreson.arkamod.items.ItemCreation;
 import cm.andreson.arkamod.proxy.CommonProxy;
 import cm.andreson.arkamod.world.worldRegister;
 import cpw.mods.fml.common.Mod;
@@ -26,24 +26,20 @@ public class ArkadiumMod {
 		@SideOnly(Side.CLIENT)
 		public Item getTabIconItem()
 		{
-			return ItemMod.ARKADIUM_PICKAXE;
+			return ItemCreation.ARKADIUM_PICKAXE;
 		}
 	};
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) 
 	{
-		ItemMod.init();
-		ItemMod.register();
-		BlockMod.init();
-		BlockMod.register();
-		worldRegister.MainRegistry();
+		proxy.preInit();
 	}
 	
 	@EventHandler
 	public void init (FMLInitializationEvent event)
 	{	
-		proxy.registerRender();
+		proxy.init();
 	}
 	
 	@EventHandler

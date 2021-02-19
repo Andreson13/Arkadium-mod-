@@ -1,15 +1,15 @@
-package cm.andreson.arkamod.init;
+package cm.andreson.arkamod.blocks;
 
 import cm.andreson.arkamod.ArkadiumMod;
 import cm.andreson.arkamod.Reference;
-import cm.andreson.arkamod.blocks.BlockBasic;
+import cm.andreson.arkamod.items.ItemCreation;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class BlockMod 
+public class BlockCreation 
 {
 	
 	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block;
@@ -49,8 +49,5 @@ public class BlockMod
 		GameRegistry.registerBlock(arkadium_ore, arkadium_ore.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(titanium_block, titanium_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(amethyst_block, amethyst_block.getUnlocalizedName().substring(5));
-	    GameRegistry.addRecipe(new ItemStack(BlockMod.arkadium_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.Item_test });
-	    GameRegistry.addRecipe(new ItemStack(BlockMod.titanium_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.TITANIUM_INGOT });
-	    GameRegistry.addRecipe(new ItemStack(BlockMod.amethyst_block, 1), new Object[]{"###", "###", "###", '#', ItemMod.AMETHYST_CRYSTAL });
-	  }
+    }
 }
