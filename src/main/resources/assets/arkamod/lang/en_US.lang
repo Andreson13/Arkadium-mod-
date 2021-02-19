@@ -1,0 +1,31 @@
+item.item_test.name= Arkadium Ingot
+
+tile.arkadium_block.name= Arkadium Block
+
+item.casqueArmor.name= Arkadium Helmet
+
+item.plastronArmor.name= Arkadium Chestplate
+
+item.pentalonArmor.name= Arkadium Leggings
+
+item.bootsArmor.name= Arkadium Boots
+
+item.arkadium_pickaxe.name= Arkadium Pickaxe
+
+item.arkadium_shovel.name= Arkadium Shovel
+
+item.arkadium_hoe.name= Arkadium Hoe
+
+item.arkadium_axe.name= Arkadium Axe
+
+item.arkadium_sword.name= Arkadium Sword
+
+item.arkadium_food.name= Arkadium Sweet
+
+itemGroup.arkadium= Arkadium Tab
+
+item.titanium_ingot.name= Titanium Ingot
+
+item.amethyst_crystal.name= Amethyst Crystal
+
+tile.arkadium_ore.name= Arkadium Ore 
