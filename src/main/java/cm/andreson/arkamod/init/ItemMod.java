@@ -1,7 +1,5 @@
 package cm.andreson.arkamod.init;
 
-
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -10,6 +8,7 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
@@ -99,7 +98,7 @@ public class ItemMod extends Reference
 	
 	public static final Item AMETHYST_CRYSTAL = (ItemIngot) new ItemAmethystCrystal()
 			.setCreativeTab(ArkadiumMod.Arkatab)
-			.setTextureName(MOD_ID + ":amthyste_crystal")
+			.setTextureName(MOD_ID + ":platinium_crystal")
 			.setUnlocalizedName("amethyst_crystal");
 	 public static final ItemArmor titaniumHelmet = (ItemArmor) new ItemArmorTuto(titaniumArmor, 0)
 	    		.setTextureName(MOD_ID + ":ark_titanium_helmet")
@@ -136,7 +135,8 @@ public class ItemMod extends Reference
 	 public static final ItemSword TITANIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
 				.setTextureName(MOD_ID + ":ark_titanium_sword")
 				.setUnlocalizedName("titanium_sword")
-				.setCreativeTab(ArkadiumMod.Arkatab);
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				;
 			
 			
     public static void init() 
@@ -167,6 +167,7 @@ public class ItemMod extends Reference
         GameRegistry.registerItem(TITANIUM_HOE, "titanium_hoe");
         GameRegistry.registerItem(TITANIUM_AXE, "titanium_axe");
         GameRegistry.registerItem(TITANIUM_SWORD, "titanium_sword");
+        GameRegistry.addRecipe(new ItemStack(ItemMod.Item_test, 9), new Object[]{"#", '#', BlockMod.arkadium_block });
     }
     
 }
