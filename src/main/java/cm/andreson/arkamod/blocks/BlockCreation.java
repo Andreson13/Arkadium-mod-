@@ -33,7 +33,7 @@ public class BlockCreation
 				.setBlockTextureName(Reference.MOD_ID + ":titanium_block")
 				.setResistance(5)
 				.setHardness(10)
-				.setLightLevel(60);
+				.setLightLevel(60); // titanium_block
 		amethyst_block = new BlockBasic(Material.rock)
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockName("amethyst_block")
