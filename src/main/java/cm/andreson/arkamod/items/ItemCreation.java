@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
@@ -144,7 +145,11 @@ public class ItemCreation extends Reference
 	 public static final ItemSword TITANIUM_SWORD = (ItemSword) new ItemSwordTest(arkaMaterial)
 				.setTextureName(MOD_ID + ":ark_titanium_sword")
 				.setUnlocalizedName("titanium_sword")
-				.setCreativeTab(ArkadiumMod.Arkatab);  
+				.setCreativeTab(ArkadiumMod.Arkatab);
+	 public static final ItemBow Arkadium_bow = (ItemBow) new ItemBowTest()
+			    .setUnlocalizedName("arkadium_bow")
+			    .setTextureName("MOD_ID + :bow")
+			    .setCreativeTab(ArkadiumMod.Arkatab);
     
     public static void register() 
     {
@@ -170,6 +175,7 @@ public class ItemCreation extends Reference
         GameRegistry.registerItem(TITANIUM_HOE, "titanium_hoe");
         GameRegistry.registerItem(TITANIUM_AXE, "titanium_axe");
         GameRegistry.registerItem(TITANIUM_SWORD, "titanium_sword");
+        GameRegistry.registerItem(Arkadium_bow, "arkadium_bow");
     }
     
 }
