@@ -146,9 +146,10 @@ public class ItemCreation extends Reference
 				.setTextureName(MOD_ID + ":ark_titanium_sword")
 				.setUnlocalizedName("titanium_sword")
 				.setCreativeTab(ArkadiumMod.Arkatab);
+	 
 	 public static final ItemBow Arkadium_bow = (ItemBow) new ItemBowTest()
 			    .setUnlocalizedName("arkadium_bow")
-			    .setTextureName("MOD_ID + :bow")
+			    .setTextureName(MOD_ID + ":ark_arkadium_bow_standby")
 			    .setCreativeTab(ArkadiumMod.Arkatab);
     
     public static void register() 

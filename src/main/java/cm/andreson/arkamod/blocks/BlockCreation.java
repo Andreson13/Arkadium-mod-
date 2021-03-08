@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class BlockCreation 
 {
 	
-	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block;
+	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block;
 	
 	public static void init()
 	{
@@ -41,6 +41,13 @@ public class BlockCreation
 				.setResistance(5)
 				.setHardness(10)
 				.setLightLevel(60);
+		cave_block = new BlockBasic(Material.glass)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("cave_block")
+				.setBlockTextureName(Reference.MOD_ID + ":cave_block")
+				.setResistance(5)
+				.setHardness(1)
+				.setLightLevel(6);
 	}
 				
 	public static void register()
@@ -49,5 +56,6 @@ public class BlockCreation
 		GameRegistry.registerBlock(arkadium_ore, arkadium_ore.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(titanium_block, titanium_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(amethyst_block, amethyst_block.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(cave_block, cave_block.getUnlocalizedName().substring(5));
     }
 }

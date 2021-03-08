@@ -2,8 +2,12 @@ package cm.andreson.arkamod.items;
 
 import cm.andreson.arkamod.Reference;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
 
 public class ItemArmorTuto extends ItemArmor {
 
@@ -26,4 +30,16 @@ public class ItemArmorTuto extends ItemArmor {
 		return null;
 	}
 	
+	 public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
+	 {
+	 if(this == ItemCreation.casqueArmor)
+	    {
+		 player.addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 3600, 2));
+	    }
+	 
+	 if(this == ItemCreation.plastronArmor)
+	    {
+		 player.addPotionEffect(new PotionEffect(Potion.invisibility.getId(), 3600, 2));
+	    }
+	 }
 }
