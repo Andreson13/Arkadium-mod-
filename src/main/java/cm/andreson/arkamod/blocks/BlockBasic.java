@@ -8,7 +8,7 @@ public class BlockBasic extends Block
 
 	public BlockBasic(Material material) {
 		super(material);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 }

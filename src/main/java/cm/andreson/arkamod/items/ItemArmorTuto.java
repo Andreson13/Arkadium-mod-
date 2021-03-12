@@ -41,5 +41,17 @@ public class ItemArmorTuto extends ItemArmor {
 	    {
 		 player.addPotionEffect(new PotionEffect(Potion.invisibility.getId(), 3600, 2));
 	    }
+	 
+	 if(this == ItemCreation.pentalonArmor)
+	    {
+		 player.addPotionEffect(new PotionEffect(Potion.jump.getId(), 3600, 2));
+	    }
+
+	 
+	 if(this == ItemCreation.bootsArmor)
+	    {
+		 player.addPotionEffect(new PotionEffect(Potion.moveSpeed.getId(), 3600, 2));
+	    }
+
 	 }
 }

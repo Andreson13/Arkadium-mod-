@@ -74,31 +74,36 @@ public class CraftCreation {
 				 " X ",
 				 " X ",
 				 '#', ItemCreation.Item_test,  
-				 'X', Items.stick});
+				 'X', ItemCreation.arkadium_stick});
 		GameRegistry.addRecipe(new ItemStack(ItemCreation.ARKADIUM_HOE, 1), new Object[]
 				{"##",
 				 " X",
 				 " X",
 				 '#', ItemCreation.Item_test, 
-				 'X', Items.stick});
+				 'X', ItemCreation.arkadium_stick});
 		GameRegistry.addRecipe(new ItemStack(ItemCreation.ARKADIUM_SPADE, 1), new Object[]
 				{" #",
 				 " X",
 				 " X",
 				 '#', ItemCreation.Item_test, 
-				 'X', Items.stick});
+				 'X', ItemCreation.arkadium_stick});
 		GameRegistry.addRecipe(new ItemStack(ItemCreation.ARKADIUM_SWORD, 1), new Object[]
 				{" #",
 				 " #",
 				 " X",
 				 '#', ItemCreation.Item_test, 
-				 'X', Items.stick});
+				 'X', ItemCreation.arkadium_stick});
 		GameRegistry.addRecipe(new ItemStack(ItemCreation.ARKADIUM_AXE, 1), new Object[]
 				{"##",
 				 "#X",
 				 " X",
 				 '#', ItemCreation.Item_test, 
-				 'X', Items.stick});
+				 'X', ItemCreation.arkadium_stick});
+		//stick
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.arkadium_stick, 1), new Object[]
+				{"#",
+				 "#",
+				 '#', ItemCreation.Item_test});
 		
 		
 		/*************/
@@ -109,7 +114,8 @@ public class CraftCreation {
 		/*****************/
 		/*     SMELT     */
 		/*****************/
-		
+		GameRegistry.addSmelting(BlockCreation.arkadium_ore, new ItemStack(ItemCreation.arkadium_fragment, 2), 1.0F);
+		GameRegistry.addSmelting(BlockCreation.titanium_ore, new ItemStack(ItemCreation.TITANIUM_INGOT, 1), 1.0F);
 		
 	}
 }

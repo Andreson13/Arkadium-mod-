@@ -1,0 +1,14 @@
+# Made in Blockbench 3.6.5
+newmtl m_0
+map_Kd wool_colored_cyan.png 
+newmtl m_1
+map_Kd gold_block.png 
+newmtl m_2
+map_Kd planks_acacia.png 
+newmtl m_3
+map_Kd wool_colored_red.png 
+newmtl m_4
+map_Kd emerald_block.png 
+newmtl m_5
+map_Kd planks_jungle.png 
+newmtl none

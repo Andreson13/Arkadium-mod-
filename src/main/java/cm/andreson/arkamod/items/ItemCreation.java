@@ -20,7 +20,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ItemCreation extends Reference
 {
-	public static ArmorMaterial arkaAmor = EnumHelper.addArmorMaterial("ArkaAmor", 60, new int []{8, 13, 11, 8}, 50); 
+	public static ArmorMaterial arkaAmor = EnumHelper.addArmorMaterial("ArkaAmor", 60, new int []{10, 13, 11, 10}, 50); 
 	
 	public static ArmorMaterial platiniumAmor = EnumHelper.addArmorMaterial("platiniumAmor", 40, new int []{3, 9, 7, 4}, 10);
 	
@@ -40,6 +40,11 @@ public class ItemCreation extends Reference
     		.setCreativeTab(ArkadiumMod.Arkatab)
     		.setTextureName(MOD_ID + ":item_test")
     		.setUnlocalizedName("item_test");
+    
+    public static final Item Item_test_1 = new Item()
+    		.setCreativeTab(ArkadiumMod.Arkatab)
+    		.setTextureName(MOD_ID + ":item_test_1")
+    		.setUnlocalizedName("item_test_1");
     
     public static final ItemArmor casqueArmor = (ItemArmor) new ItemArmorTuto(arkaAmor, 0)
     		.setTextureName(MOD_ID + ":casqueArmor")
@@ -151,10 +156,52 @@ public class ItemCreation extends Reference
 			    .setUnlocalizedName("arkadium_bow")
 			    .setTextureName(MOD_ID + ":ark_arkadium_bow_standby")
 			    .setCreativeTab(ArkadiumMod.Arkatab);
+	 
+	 public static final ItemFood ARKADIUM_APPLE = (ItemFood) new ItemFoodTest(3, 0, false)
+	            .setAlwaysEdible()
+	            .setTextureName(MOD_ID + ":ark_arkadium_apple")
+	            .setUnlocalizedName("arkadium_apple")
+	            .setCreativeTab(ArkadiumMod.Arkatab);
+	 
+	 public static final Item arkadium_stick = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":arkadium_stick")
+	    		.setUnlocalizedName("arkadium_stick");
+	 
+	 public static final Item titanium_stick = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":titanium_stick")
+	    		.setUnlocalizedName("titanium_stick");
+	 
+	 public static final Item arkadium_fragment = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":arkadium_fragment")
+	    		.setUnlocalizedName("arkadium_fragment");
+	 
+	 public static final Item arkadium_gem = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":arkadium_crystal_2")
+	    		.setUnlocalizedName("arkadium_gem");
+	 
+	 public static final Item arkadium_crystal = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":arkadium_crystal_4")
+	    		.setUnlocalizedName("arkadium_crystal");
+	 
+	 public static final Item hammer = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":hammer")
+	    		.setUnlocalizedName("hammer");
+	 
+	 public static final Item dynamite = new Item()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":dinamite")
+	    		.setUnlocalizedName("dynamite");
     
     public static void register() 
     {
         GameRegistry.registerItem(Item_test, "item_test");
+        GameRegistry.registerItem(Item_test_1, "item_test_1");
         GameRegistry.registerItem(casqueArmor, "casqueArmor");
         GameRegistry.registerItem(plastronArmor, "plastronArmor");
         GameRegistry.registerItem(pentalonArmor, "pentalonArmor");
@@ -177,6 +224,14 @@ public class ItemCreation extends Reference
         GameRegistry.registerItem(TITANIUM_AXE, "titanium_axe");
         GameRegistry.registerItem(TITANIUM_SWORD, "titanium_sword");
         GameRegistry.registerItem(Arkadium_bow, "arkadium_bow");
+        GameRegistry.registerItem(ARKADIUM_APPLE, "arkadium_apple");
+        GameRegistry.registerItem(arkadium_stick, "arkadium_stick");
+        GameRegistry.registerItem(titanium_stick, "titanium_stick");
+        GameRegistry.registerItem(arkadium_fragment, "arkadium_fragment");
+        GameRegistry.registerItem(arkadium_gem, "arkadium_gem");
+        GameRegistry.registerItem(arkadium_crystal, "arkadium_crystal");
+        GameRegistry.registerItem(hammer, "hammer");
+        GameRegistry.registerItem(dynamite, "dynamite");
     }
     
 }

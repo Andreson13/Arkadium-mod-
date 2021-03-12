@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class BlockCreation 
 {
 	
-	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block;
+	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore;
 	
 	public static void init()
 	{
@@ -48,6 +48,21 @@ public class BlockCreation
 				.setResistance(5)
 				.setHardness(1)
 				.setLightLevel(6);
+		titanium_ore = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("titanium_ore")
+				.setBlockTextureName(Reference.MOD_ID + ":titanium_ore_2")
+				.setResistance(5)
+				.setHardness(10)
+				.setLightLevel(60);
+		vibranium_ore = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("vibranium_ore")
+				.setBlockTextureName(Reference.MOD_ID + ":vibranium_ore_2")
+				.setResistance(5)
+				.setHardness(10)
+				.setLightLevel(60);	
+		
 	}
 				
 	public static void register()
@@ -57,5 +72,7 @@ public class BlockCreation
 	    GameRegistry.registerBlock(titanium_block, titanium_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(amethyst_block, amethyst_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(cave_block, cave_block.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(titanium_ore, titanium_ore.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(vibranium_ore, vibranium_ore.getUnlocalizedName().substring(5));
     }
 }
