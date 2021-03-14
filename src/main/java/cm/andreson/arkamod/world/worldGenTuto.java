@@ -58,9 +58,9 @@ public class worldGenTuto implements IWorldGenerator {
 	private void generateOverWorld(World world, int i, int j, Random random)
 	{
 
-		addOre(BlockCreation.arkadium_ore, Blocks.stone, random, world, i, j, 2, 5, 1, 3, 13);
-		addOre(BlockCreation.titanium_ore, Blocks.stone, random, world, i, j, 14, 20, 2, 6, 26);
-		addOre(BlockCreation.vibranium_ore, Blocks.stone, random, world, i, j, 3, 10, 2, 6, 17);
+		addOre(BlockCreation.arkadium_ore, Blocks.stone, random, world, i, j, 2, 5, 1, 3, 7);
+		addOre(BlockCreation.titanium_ore, Blocks.stone, random, world, i, j, 14, 20, 2, 6, 20);
+		addOre(BlockCreation.vibranium_ore, Blocks.stone, random, world, i, j, 3, 5, 2, 6, 10);
 	}
 
 	private void generateEnd(World world, int i, int j, Random random) 

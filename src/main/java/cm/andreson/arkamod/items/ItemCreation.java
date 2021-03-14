@@ -193,10 +193,11 @@ public class ItemCreation extends Reference
 	    		.setTextureName(MOD_ID + ":hammer")
 	    		.setUnlocalizedName("hammer");
 	 
-	 public static final Item dynamite = new Item()
+	 public static final Item dynamite = new DynamiteTuto()
 	    		.setCreativeTab(ArkadiumMod.Arkatab)
 	    		.setTextureName(MOD_ID + ":dinamite")
 	    		.setUnlocalizedName("dynamite");
+	 
     
     public static void register() 
     {

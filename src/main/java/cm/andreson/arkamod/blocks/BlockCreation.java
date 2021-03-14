@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class BlockCreation 
 {
 	
-	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore;
+	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore, arkadium_stairs, arkadium_fence;
 	
 	public static void init()
 	{
@@ -62,6 +62,14 @@ public class BlockCreation
 				.setResistance(5)
 				.setHardness(10)
 				.setLightLevel(60);	
+		arkadium_stairs = new BlockStairMod(BlockCreation.arkadium_block, 0)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("arkadium_stairs")
+				.setLightLevel(1.0F);
+		arkadium_fence = new BlockFenceMod("BlockCreation.arkadium_block", Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("arkadium_fence")
+				.setLightLevel(1.0F);
 		
 	}
 				
@@ -74,5 +82,7 @@ public class BlockCreation
 	    GameRegistry.registerBlock(cave_block, cave_block.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(titanium_ore, titanium_ore.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(vibranium_ore, vibranium_ore.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(arkadium_stairs, arkadium_stairs.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(arkadium_fence, arkadium_fence.getUnlocalizedName().substring(5));
     }
 }
