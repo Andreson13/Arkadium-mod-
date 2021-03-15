@@ -4,7 +4,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import cm.andreson.arkamod.entity.EntityDynamite;
 import java.util.Random;
-
 import cm.andreson.arkamod.ArkadiumMod;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -16,9 +15,9 @@ public class DynamiteTuto extends net.minecraft.item.Item
   public DynamiteTuto()
   {
     setMaxStackSize(64);
-    setUnlocalizedName("dynamitebig");
+    setUnlocalizedName("dynamit");
     setCreativeTab(ArkadiumMod.Arkatab);
-    setTextureName("palamod:DynamiteBig");
+    setTextureName(":dinamite");
   }
   
 
