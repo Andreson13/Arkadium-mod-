@@ -66,10 +66,11 @@ public class BlockCreation
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockName("arkadium_stairs")
 				.setLightLevel(1.0F);
-		arkadium_fence = new BlockFenceMod("BlockCreation.arkadium_block", Material.rock)
+		arkadium_fence = new BlockFenceMod("arkadium_block", Material.rock)
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockName("arkadium_fence")
 				.setLightLevel(1.0F);
+		
 		
 	}
 				

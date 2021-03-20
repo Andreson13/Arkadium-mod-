@@ -64,7 +64,28 @@ public class CraftCreation {
 				 "# #",
 				 "# #",
 				 '#', ItemCreation.Item_test });
+
+		// titnium armor
 		
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.titaniumHelmet, 1), new Object[]
+				{"###",
+				 "# #",
+				 '#', ItemCreation.TITANIUM_INGOT });
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.titaniumChestplate, 1), new Object[]
+				{"# #",
+				 "###",
+				 "###",
+				 '#', ItemCreation.TITANIUM_INGOT });
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.titaniumLeggings, 1), new Object[]
+				{"###",
+				 "# #",
+				 "# #",
+				 '#', ItemCreation.TITANIUM_INGOT });
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.titaniumBoots, 1), new Object[]
+				{"   ",
+				 "# #",
+				 "# #",
+				 '#', ItemCreation.TITANIUM_INGOT });
 		
 		/**************/
 		/*CRAFT OUTILS*/
@@ -105,6 +126,37 @@ public class CraftCreation {
 				 "#",
 				 '#', ItemCreation.Item_test});
 		
+		//titanium outils
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.TITANIUM_PICKAXE, 1), new Object[]
+				{"###",
+				 " X ",
+				 " X ",
+				 '#', ItemCreation.TITANIUM_INGOT,  
+				 'X', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.TITANIUM_HOE, 1), new Object[]
+				{"##",
+				 " X",
+				 " X",
+				 '#', ItemCreation.TITANIUM_INGOT, 
+				 'X', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.TITANIUM_SPADE, 1), new Object[]
+				{" #",
+				 " X",
+				 " X",
+				 '#', ItemCreation.TITANIUM_INGOT, 
+				 'X', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.TITANIUM_SWORD, 1), new Object[]
+				{" #",
+				 " #",
+				 " X",
+				 '#', ItemCreation.TITANIUM_INGOT, 
+				 'X', Items.stick});
+		GameRegistry.addRecipe(new ItemStack(ItemCreation.TITANIUM_AXE, 1), new Object[]
+				{"##",
+				 "#X",
+				 " X",
+				 '#', ItemCreation.TITANIUM_INGOT, 
+				 'X', Items.stick});
 		
 		/*************/
 		/*CRAFT AUTRE*/

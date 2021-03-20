@@ -59,7 +59,7 @@ public class worldGenTuto implements IWorldGenerator {
 	{
 
 		addOre(BlockCreation.arkadium_ore, Blocks.stone, random, world, i, j, 2, 5, 1, 3, 7);
-		addOre(BlockCreation.titanium_ore, Blocks.stone, random, world, i, j, 9, 15, 2, 5, 10);
+		addOre(BlockCreation.titanium_ore, Blocks.stone, random, world, i, j, 9, 12, 1, 3, 8);
 		addOre(BlockCreation.vibranium_ore, Blocks.stone, random, world, i, j, 2, 5, 1, 3, 8);
 	}
 
