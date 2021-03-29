@@ -28,13 +28,13 @@ public class ItemCreation extends Reference
 
 	public static ArmorMaterial vibraniumAmor = EnumHelper.addArmorMaterial("vibraniumAmor", 50, new int []{6, 10, 9, 6}, 30);
 
-	public static ToolMaterial arkaMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
+	public static ToolMaterial arkaMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 4999, 28.0F, 7.0F, 35);
 	
-	public static ToolMaterial titaaMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
+	public static ToolMaterial titaaMaterial = EnumHelper.addToolMaterial("titaniumMaterial", 3, 2999, 23.0F, 5.0F, 25);
 	
-	public static ToolMaterial vibraMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
+	public static ToolMaterial vibraMaterial = EnumHelper.addToolMaterial("arkaMaterial", 3, 4999, 30.0F, 6.0F, 35);
 	
-	public static ToolMaterial platMaterial = EnumHelper.addToolMaterial("arkaMaterial", 4, 2000, 12.0F, 4.0F, 30);
+	public static ToolMaterial platMaterial = EnumHelper.addToolMaterial("arkaMaterial", 3, 1999, 20.0F, 4.0F, 20);
 	
     public static final Item Item_test = new Item()
     		.setCreativeTab(ArkadiumMod.Arkatab)
@@ -188,7 +188,7 @@ public class ItemCreation extends Reference
 	    		.setTextureName(MOD_ID + ":arkadium_crystal_4")
 	    		.setUnlocalizedName("arkadium_crystal");
 	 
-	 public static final Item hammer = new Item()
+	 public static final Item hammer = new ItemHammer(arkaMaterial)
 	    		.setCreativeTab(ArkadiumMod.Arkatab)
 	    		.setTextureName(MOD_ID + ":hammer")
 	    		.setUnlocalizedName("hammer");
@@ -197,6 +197,16 @@ public class ItemCreation extends Reference
 	    		.setCreativeTab(ArkadiumMod.Arkatab)
 	    		.setTextureName(MOD_ID + ":dinamite")
 	    		.setUnlocalizedName("dynamite");
+	 
+	 public static final Item unclaim_finder = new ItemUnclaimFinder()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":unclaim_finder")
+	    		.setUnlocalizedName("unclaim_finder");
+	 public static final Item hang_glider = new ItemHangGlider()
+	    		.setCreativeTab(ArkadiumMod.Arkatab)
+	    		.setTextureName(MOD_ID + ":HangGlider")
+	    		.setUnlocalizedName("hang_glider");
+	 
 	 
     
     public static void register() 
@@ -232,7 +242,9 @@ public class ItemCreation extends Reference
         GameRegistry.registerItem(arkadium_gem, "arkadium_gem");
         GameRegistry.registerItem(arkadium_crystal, "arkadium_crystal");
         GameRegistry.registerItem(hammer, "hammer");
-        GameRegistry.registerItem(dynamite, "dynamite");
+        GameRegistry.registerItem(dynamite, "dynamite");  
+        GameRegistry.registerItem(unclaim_finder, "unclaim_finder"); 
+        GameRegistry.registerItem(hang_glider, "hang_glider");
     }
     
 }

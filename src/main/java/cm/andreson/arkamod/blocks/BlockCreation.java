@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class BlockCreation 
 {
 	
-	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore, arkadium_stairs, arkadium_fence;
+	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore, arkadium_stairs, arkadium_fence, slime_pad;
 	
 	public static void init()
 	{
@@ -70,6 +70,10 @@ public class BlockCreation
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockName("arkadium_fence")
 				.setLightLevel(1.0F);
+		slime_pad = new BlockSlimePad()
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockTextureName(Reference.MOD_ID + ":slime_pad")
+				.setBlockName("slime_pad");
 		
 		
 	}
@@ -85,5 +89,6 @@ public class BlockCreation
 	    GameRegistry.registerBlock(vibranium_ore, vibranium_ore.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(arkadium_stairs, arkadium_stairs.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(arkadium_fence, arkadium_fence.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(slime_pad, slime_pad.getUnlocalizedName().substring(5));
     }
 }
