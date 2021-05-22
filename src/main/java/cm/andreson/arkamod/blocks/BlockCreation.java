@@ -12,7 +12,7 @@ import net.minecraft.item.ItemStack;
 public class BlockCreation 
 {
 	
-	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore, arkadium_stairs, arkadium_fence, slime_pad;
+	public static Block arkadium_block, arkadium_ore, titanium_block, amethyst_block, cave_block, random_block, titanium_ore, vibranium_ore, arkadium_stairs, arkadium_fence, slime_pad, arkadium_machine, titanium_block2, ghost_leaves, ghost_planks, ghost_log;
 	
 	public static void init()
 	{
@@ -74,7 +74,37 @@ public class BlockCreation
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockTextureName(Reference.MOD_ID + ":slime_pad")
 				.setBlockName("slime_pad");
-		
+		arkadium_machine = new BlockArkadiumMachine()
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockTextureName(Reference.MOD_ID + ":slime_pad")
+				.setBlockName("slime_pad");
+		titanium_block2 = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("titanium_block2")
+				.setBlockTextureName(Reference.MOD_ID + ":titanium_block2")
+				.setResistance(5)
+				.setHardness(10)
+				.setLightLevel(60);
+		ghost_leaves = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("ghost_leaves")
+				.setBlockTextureName(Reference.MOD_ID + ":ark_ghost_log_leaves")
+				.setResistance(5)
+				.setHardness(10)
+				.setLightLevel(60);
+		ghost_planks = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("ghost_planks")
+				.setBlockTextureName(Reference.MOD_ID + ":ark_ghost_log_planks")
+				.setHardness(10)
+				.setLightLevel(60);
+		ghost_log = new BlockBasic(Material.rock)
+				.setCreativeTab(ArkadiumMod.Arkatab)
+				.setBlockName("ghost_log")
+				.setBlockTextureName(Reference.MOD_ID + ":ark_ghost_log_side")
+				.setResistance(5)
+				.setHardness(10)
+				.setLightLevel(60);
 		
 	}
 				
@@ -90,5 +120,6 @@ public class BlockCreation
 	    GameRegistry.registerBlock(arkadium_stairs, arkadium_stairs.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(arkadium_fence, arkadium_fence.getUnlocalizedName().substring(5));
 	    GameRegistry.registerBlock(slime_pad, slime_pad.getUnlocalizedName().substring(5));
+	    GameRegistry.registerBlock(titanium_block2, titanium_block2.getUnlocalizedName().substring(5));
     }
 }

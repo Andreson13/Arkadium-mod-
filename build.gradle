@@ -3,7 +3,11 @@ buildscript {
         mavenCentral()
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://repo.spongepowered.org/repository/forge-proxy/"
+        }
+        maven {
+            name = "sunproject"
+            url = "http://mvn.sunproject.xyz/releases"
         }
         maven {
             name = "sonatype"
