@@ -74,10 +74,6 @@ public class BlockCreation
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockTextureName(Reference.MOD_ID + ":slime_pad")
 				.setBlockName("slime_pad");
-		arkadium_machine = new BlockArkadiumMachine()
-				.setCreativeTab(ArkadiumMod.Arkatab)
-				.setBlockTextureName(Reference.MOD_ID + ":slime_pad")
-				.setBlockName("slime_pad");
 		titanium_block2 = new BlockBasic(Material.rock)
 				.setCreativeTab(ArkadiumMod.Arkatab)
 				.setBlockName("titanium_block2")

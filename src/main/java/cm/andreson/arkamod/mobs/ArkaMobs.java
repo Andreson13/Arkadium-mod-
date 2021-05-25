@@ -14,7 +14,7 @@ public class ArkaMobs {
 }
 	public static void registerEntity(){
 		
-		createEntity(GhostMob.class, "Arka_Mob", 0x0004FF, 0xFF00E1);
+		createEntity(GhostMob.class, "Ghost_Mob", 0x0004FF, 0xFF00E1);
 
 }
 	
@@ -22,7 +22,7 @@ public class ArkaMobs {
 		int randomId = EntityRegistry.findGlobalUniqueEntityId();
 		EntityRegistry.registerGlobalEntityID(entityClass, entityName, randomId);
 		EntityRegistry.registerModEntity(entityClass, entityName, randomId, ArkadiumMod.instance, 64, 1, true);
-		EntityRegistry.addSpawn(entityClass, 2, 2, 5, EnumCreatureType.creature, BiomeGenBase.forest);
+		EntityRegistry.addSpawn(entityClass, 2, 2, 5, EnumCreatureType.monster, BiomeGenBase.forest);
 		
 		createEgg(randomId, solidColor, spotColor);
 		
